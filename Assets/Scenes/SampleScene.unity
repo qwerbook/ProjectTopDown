@@ -180,7 +180,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -205,13 +205,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 8.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,58 +677,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5933351e88d86f142b545fbad86ac85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerController
-  movementInput:
-    m_Name: Movement Input
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: d6dede7b-3509-4255-9d9a-6e21ecac26cb
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 2D Vector
-      m_Id: c6f725b4-2c02-44cd-ba49-47ff47c330e0
-      m_Path: 2DVector
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement Input
-      m_Flags: 4
-    - m_Name: up
-      m_Id: cb909148-b66f-4e5a-b845-59b08079d26c
-      m_Path: <Keyboard>/w
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement Input
-      m_Flags: 8
-    - m_Name: down
-      m_Id: 45968b19-d090-4152-b17a-171b2bfab6b7
-      m_Path: <Keyboard>/s
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement Input
-      m_Flags: 8
-    - m_Name: left
-      m_Id: 4400ab7d-8449-45d0-a15c-21f3878e56b4
-      m_Path: <Keyboard>/a
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement Input
-      m_Flags: 8
-    - m_Name: right
-      m_Id: bd500a71-4f7a-409a-9283-ba87a86c4c29
-      m_Path: <Keyboard>/d
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement Input
-      m_Flags: 8
-    m_Flags: 0
-  rb: {fileID: 1703778028}
-  moveDirection: {x: 0, y: 0}
   moveSpeed: 10
+  acceleration: 40
+  deceleration: 50
+  rb: {fileID: 1703778028}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
