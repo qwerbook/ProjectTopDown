@@ -557,6 +557,7 @@ GameObject:
   - component: {fileID: 1703778029}
   - component: {fileID: 1703778028}
   - component: {fileID: 1703778031}
+  - component: {fileID: 1703778032}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -681,6 +682,22 @@ MonoBehaviour:
   acceleration: 40
   deceleration: 50
   rb: {fileID: 1703778028}
+--- !u!114 &1703778032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703778027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36b95398382bbd94cb58431f7892fe64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::playerAim
+  rotationSpeed: 15
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
