@@ -2,7 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class playerAim : MonoBehaviour
+public class PlayerAim : MonoBehaviour
 {
     [Header("aim setting")]
     [SerializeField]private float rotationSpeed;
@@ -15,6 +15,7 @@ public class playerAim : MonoBehaviour
     public Vector3 AimPoint { get; private set; }
 
     private InputSystem_Actions controls;
+
 
     private void Awake()
     {
