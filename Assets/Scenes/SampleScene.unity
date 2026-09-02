@@ -558,6 +558,7 @@ GameObject:
   - component: {fileID: 1703778028}
   - component: {fileID: 1703778031}
   - component: {fileID: 1703778032}
+  - component: {fileID: 1703778033}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -698,6 +699,20 @@ MonoBehaviour:
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 0
+--- !u!114 &1703778033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703778027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66c00b331a6da3040a4896db6f75351a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponController
+  currentWeapon: {fileID: 11400000, guid: b6a506b4971d94648bcb190c9aebd2a3, type: 2}
+  firePoint: {fileID: 1703778030}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
