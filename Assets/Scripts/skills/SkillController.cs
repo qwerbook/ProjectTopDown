@@ -11,6 +11,7 @@ public class SkillController : MonoBehaviour
     }
 
     [SerializeField] private SkillSlot[] skillSlots = new SkillSlot[3]; // Q, E, Space
+    private SkillContext context;
 
     private void Update()
     {
@@ -36,7 +37,7 @@ public class SkillController : MonoBehaviour
         SkillSlot slot = skillSlots[index];
         if (slot.skillData == null || slot.cooldownTimer > 0f) return;
 
-        slot.skillData.Execute(gameObject);
+        slot.skillData.Execute(context);
         slot.cooldownTimer = slot.skillData.cooldown;
     }
 

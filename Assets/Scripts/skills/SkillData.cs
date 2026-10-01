@@ -7,5 +7,5 @@ public abstract class SkillData : ScriptableObject
     public float cooldown = 5f;
 
     // แต่ละ skill ต้องกำหนดเองว่า "ทำงานยังไงเมื่อถูกใช้"
-    public abstract void Execute(GameObject user);
+    public abstract void Execute(SkillContext context);
 }

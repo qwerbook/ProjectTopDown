@@ -8,19 +8,17 @@ public class MissileSkillData : SkillData
     public float missileSpeed = 15f;
     public float missileDamage = 30f;
 
-    public override void Execute(GameObject user)
+    public override void Execute(SkillContext context)
     {
-        PlayerAim aim = user.GetComponent<PlayerAim>();
-        if (aim == null) return;
+        if (missilePrefab == null) return;
 
-        Transform firePoint = user.transform; // หรือดึง firePoint จริงถ้ามี reference
-        GameObject missileObj = Instantiate(
+        GameObject missileObj = Object.Instantiate(
             missilePrefab,
-            firePoint.position,
-            Quaternion.LookRotation(aim.AimDirection, Vector3.up)
+            context.Transform.position,
+            Quaternion.LookRotation(context.Aim.AimDirection, Vector3.up)
         );
 
         Projectile projectile = missileObj.GetComponent<Projectile>();
-        projectile.Initialize(aim.AimDirection, missileSpeed, missileDamage, 5f);
+        projectile.Initialize(context.Aim.AimDirection, missileSpeed, missileDamage, 5f);
     }
 }

@@ -608,6 +608,7 @@ GameObject:
   - component: {fileID: 1703778031}
   - component: {fileID: 1703778032}
   - component: {fileID: 1703778033}
+  - component: {fileID: 1703778034}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Player
@@ -762,6 +763,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WeaponController
   currentWeapon: {fileID: 11400000, guid: b6a506b4971d94648bcb190c9aebd2a3, type: 2}
   firePoint: {fileID: 1703778030}
+--- !u!114 &1703778034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703778027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeab29e4b91354d40b5ee51d8c134e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillController
+  skillSlots:
+  - skillData: {fileID: 0}
+    cooldownTimer: 0
+  - skillData: {fileID: 0}
+    cooldownTimer: 0
+  - skillData: {fileID: 0}
+    cooldownTimer: 0
 --- !u!1001 &1885769619876676972
 PrefabInstance:
   m_ObjectHideFlags: 0
